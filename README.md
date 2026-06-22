@@ -45,20 +45,6 @@ Para mudar o conteúdo, edite apenas a camada **Model**.
 
 ---
 
-## Como editar o conteúdo
-
-Tudo que é texto, projeto ou contato vive em `src/models/`:
-
-- **Seus dados de contato** → `src/models/contact.ts` (telefone, e-mail, LinkedIn, GitHub).
-- **Adicionar um projeto** → inclua um objeto em `src/models/projects.ts`.
-  Coloque a imagem de preview em `public/projects/` e aponte o campo `image`.
-- **Ajustar a linha do tempo** → `src/models/timeline.ts` (troque os anos `201X`/`20XX`).
-- **Textos da hero e do "sobre"** → `src/models/profile.ts`.
-
-Os componentes se atualizam sozinhos a partir desses dados.
-
----
-
 ## Rodando localmente
 
 ```bash
@@ -72,14 +58,6 @@ Outros scripts:
 npm run build      # build de produção
 npm run typecheck  # checagem de tipos sem emitir
 ```
-
----
-
-## Deploy na Vercel
-
-1. Suba o projeto para um repositório no GitHub.
-2. Em [vercel.com](https://vercel.com), importe o repositório.
-3. A Vercel detecta Next.js automaticamente — basta clicar em **Deploy**.
 
 ---
 
