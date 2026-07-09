@@ -29,4 +29,22 @@ export const projects: Project[] = [
     ],
     repoUrl: "  https://github.com/ImRobss/autentication-node",
   },
+  {
+    name: "Bookworm",
+    description:
+      "Plataforma digital de gerenciamento de bibliotecas, construída como um monorepo Nx full-stack. Permite navegar pelo catálogo com filtro por gênero, alugar títulos por períodos de 14 dias, avaliar livros com notas de 1 a 5, marcar favoritos e acompanhar o histórico de leitura e livros vistos recentemente, com autenticação JWT e revogação de tokens.",
+    stack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "NestJS",
+      "TypeORM",
+      "PostgreSQL",
+      "Nx",
+      "JWT",
+    ],
+    image: "/projects/bookworm.png",
+    repoUrl: "https://github.com/ImRobss/bookworm",
+  },
 ];
