@@ -4,11 +4,13 @@ import type { Project } from "@models/types";
 import { Section, SectionHeading, Reveal, GlassCard } from "@views/shared";
 import { ArrowIcon, GithubIcon } from "@views/shared/Icons";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 function ProjectPreview({ project }: { project: Project }) {
   if (project.image) {
     return (
       <Image
-        src={project.image}
+        src={`${basePath}${project.image}`}
         alt={`Preview do projeto ${project.name}`}
         fill
         sizes="(min-width: 1024px) 50vw, 100vw"
