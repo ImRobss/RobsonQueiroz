@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { projects } from "@models/index";
 import type { Project } from "@models/types";
 import { Section, SectionHeading, Reveal, GlassCard } from "@views/shared";
@@ -6,11 +7,12 @@ import { ArrowIcon, GithubIcon } from "@views/shared/Icons";
 function ProjectPreview({ project }: { project: Project }) {
   if (project.image) {
     return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
+      <Image
         src={project.image}
         alt={`Preview do projeto ${project.name}`}
-        className="h-full w-full object-cover"
+        fill
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        className="object-cover"
       />
     );
   }
